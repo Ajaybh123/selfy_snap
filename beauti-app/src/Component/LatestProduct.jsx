@@ -70,7 +70,7 @@ const LatestProductsCarousel = () => {
                                     </Link>
 
                                     <span className="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-0.5 rounded-full shadow">
-                                        10% OFF
+                                        New Arrive
                                     </span>
                                 </div>
 
