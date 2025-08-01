@@ -42,6 +42,7 @@ const Footer = () => {
                 <li key={index}>
                   <Link className="text-white" to={link.url} target="_blank" rel="noopener noreferrer">
                     <i className={link.iconClass}></i>
+                    <p className="text-white">{link.platfrom}</p>
                   </Link>
                 </li>
               ))}
@@ -76,11 +77,11 @@ const Footer = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-sm text-gray-300 mb-12">
           {footer.quickLinks?.map((section, index) => (
             <div key={index}>
-              <h4 className="font-semibold text-white mb-3">{section.section}</h4>
+              <h4 className="font-semibold text-white mb-3">{section?.section}</h4>
               <ul className="space-y-2">
                 {section.links?.map((link, idx) => (
                   <li key={idx}>
-                    <Link className="text-white" to={link.path}>{link.label}</Link>
+                    <Link className="text-white" to={link?.path}>{link?.label}</Link>
                   </li>
                 ))}
               </ul>
