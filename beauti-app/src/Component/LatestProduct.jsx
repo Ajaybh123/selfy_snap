@@ -53,7 +53,7 @@ const LatestProductsCarousel = () => {
 
             <Slider {...settings}>
                 {products.map(({ _id, name, price, images = [], category }) => {
-                    const imageUrl = images.length > 0 ? `https://selfy-snap-o6ka.onrender.com${images[0]}` : "/no-image.png";
+                    const imageUrl = images.length > 0 ? `${images[0]}` : "/no-image.png";
 
                     return (
                         <div key={_id} className="p-2">
