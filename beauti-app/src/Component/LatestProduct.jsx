@@ -77,7 +77,7 @@ const LatestProductsCarousel = () => {
                                 {/* Product Info + Buttons */}
                                 <div className="flex flex-col justify-between flex-grow p-4">
                                     <div>
-                                        <h3 className="text-sm font-semibold text-gray-900 truncate">{name}</h3>
+                                        <h5 className="text-sm font-semibold text-gray-900 truncate">{name}</h5>
                                         <p className="text-xs text-gray-500">{category || "Uncategorized"}</p>
                                         <p className="text-blue-600 text-xl font-bold mt-1">₹{price}</p>
                                     </div>
