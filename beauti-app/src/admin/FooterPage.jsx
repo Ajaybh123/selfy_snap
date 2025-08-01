@@ -98,7 +98,6 @@ const AdminFooter = () => {
     }
 
     alert("Saved Successfully");
-    window.location.reload();
   };
 
   const handleDelete = async () => {
