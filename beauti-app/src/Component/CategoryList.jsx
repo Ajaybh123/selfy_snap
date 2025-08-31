@@ -24,7 +24,7 @@ const CategoryScroll = () => {
             <div className="flex gap-6 min-w-max justify-center">
                 {categories.map((cat) => (
                     <Link
-                        to={`/category/${cat.slug}`}
+                        to={`/product`}
                         key={cat._id}
                         className="flex flex-col items-center min-w-[72px] hover:bg-gray-100 p-2 rounded-md transition"
                     >
