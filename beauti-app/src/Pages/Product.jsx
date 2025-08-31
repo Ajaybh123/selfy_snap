@@ -64,7 +64,7 @@ const Product = () => {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const res = await axios.get("https://selfy-snap-o6ka.onrender.com/api/products/all-products");
+                const res = await axios.get("http://localhost:4000/api/productdetail/alldetails");
                 setProducts(res.data.products);
             } catch (error) {
                 console.error("Failed to fetch products:", error);
@@ -90,7 +90,7 @@ const Product = () => {
                     >
                         <div className="relative overflow-hidden">
                             <Link to={`/product/${_id}`}> <img
-                                src={`https://selfy-snap-o6ka.onrender.com${images[0]}`}
+                                src={`${images[0]}`}
                                 alt={name}
                                 className="w-full h-40 object-cover transform group-hover:scale-105 transition-transform duration-300"
                             />
@@ -133,3 +133,4 @@ const Product = () => {
 };
 
 export default Product;
+
